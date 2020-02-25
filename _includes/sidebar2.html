@@ -1,0 +1,71 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<style>
+  .navMenuDocumentation {
+    display: block;
+    border-bottom: 1px solid #696969;
+    padding: 2px;
+  }
+
+</style>
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    <a class="navMenuDocumentation" href="/">Home</a>
+    <a class="navMenuDocumentation" href="/emg">EMG</a>
+    <a class="navMenuDocumentation" href="/eeg">EEG</a>
+    <a class="navMenuDocumentation" href="/ecg">ECG</a>
+    <a class="navMenuDocumentation" href="/ultrasound">Ultra Sound</a>
+    <a class="navMenuDocumentation" href="/programming">Programming</a>
+    <ul>
+      <div class="navMenuDocumentation">
+        <li> <a style="display: block;" href="#about">Python</a>
+          <ul>
+            <li>Introduction</li>
+            <li>Envirnoments</li>
+            <li>Package Manager</li>
+            <li>Naming Conventions</li>
+            <li>Best Practices</li>
+          </ul>
+        </li>
+      </div>
+      <div class="navMenuDocumentation">
+        <li>Object Oriented Programming (OOP)</li>
+      </div>
+      <div class="navMenuDocumentation">
+        <li>Desktop Application <ul>
+            <li>Introduction</li>
+            <li>UI Options</li>
+            <li>Starter Kit</li>
+            <li>VIPER Architecture</li>
+          </ul>
+        </li>
+      </div>
+      <div class="navMenuDocumentation">
+        <li> <a style="display: block;" href="/signal-processing">Signal Processing</a> </li>
+      </div>
+      <div class="navMenuDocumentation">
+        <li> <a style="display: block;" href="/plotting-visualization">Plotting & Visualization</a> </li>
+      </div>
+      <div class="navMenuDocumentation">
+        <li> <a style="display: block;" href="/machine-learning">Machine Learning</a> </li>
+      </div>
+      <div class="navMenuDocumentation">
+        <li> <a style="display: block;" href="/mne">Biosignal Libraries</a>
+      </div>
+      <ul>
+        <li><a style="display: block;" href="/mne">MNE</a></li>
+      </ul>
+      </li>
+      <div class="navMenuDocumentation">
+        <li> <a style="display: block;" href="/useful-tutorials">Useful Tutorials</a> </li>
+      </div>
+    </ul>
+  </nav>
+  <div class="sidebar-item">
+    <p> &copy; {{ site.time | date: '%Y' }}. All rights reserved. </p>
+  </div>
+</div>

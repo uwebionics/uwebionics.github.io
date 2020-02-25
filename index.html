@@ -1,50 +1,40 @@
-﻿<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Home
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>index.html</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-<body class="stackedit">
-  <div class="stackedit__html"><h1 id="welcome-to-university-of-waterloo-ebionics-lab">Welcome to University of Waterloo Ebionics Lab</h1>
-<p>This website is maintained and operated by the graduate students, phds and research fellows of <strong>EBionics</strong> Lab at <strong>University of Waterloo, Canada</strong>. The lab functions under the instructions and supervision of <strong>Prof. Ning Jiang</strong>. Please visit <a href="https://uwaterloo.ca/engineering-bionics-lab">Waterloo Engineering Bionics Lab</a> for any further information or lab contacts.</p>
-<h2 id="documentation">Documentation</h2>
-<p>The purpose of this documentation is to make sure each member of the lab has same research and coding practicies so that the overhead and time required to reproduce or extend any scholarly work can be reduced.</p>
-<ul>
-<li><a href="good_programming_practices_python.html">Introduction and Best Practices - Python</a></li>
-<li>Desktop Application Starter Kit - Python</li>
-<li><a href="sp_ml_lib_tut.html">Signal Processing and Machine Learning Libraries - Python/IPython</a></li>
-<li>Dataset saving format and best practices</li>
-</ul>
-<h2 id="alumni-scholarly-work">Alumni Scholarly Work</h2>
-<ul>
-<li>
-<p>Aravind Ravi, 2019</p>
-<ul>
-<li>Graduate Thesis - <a href="https://uwspace.uwaterloo.ca/handle/10012/14881">Enhancing the Decoding Performance of Steady-State Visual Evoked Potentials based Brain-Computer Interface.</a></li>
-<li>Code - <a href="introduction_ssvep.html">Jupyter Notebook</a></li>
-</ul>
-</li>
-<li>
-<p>Erik Lloyd, 2019</p>
-<ul>
-<li>Graduate Thesis - <a href="https://uwspace.uwaterloo.ca/handle/10012/15025">Applications of Neural Networks in Classifying Trained and Novel Gestures Using Surface Electromyography</a></li>
-</ul>
-</li>
-<li>
-<p>Sarah Pearce, 2019</p>
-<ul>
-<li>Graduate Thesis - <a href="https://uwspace.uwaterloo.ca/handle/10012/14548">A Comparison of Movement-Related Cortical Potentials and Their Application in Brain-Computer Interfaces for Autism Spectrum Disorder</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="authors">Authors</h2>
-<p>Tushar Chopra - <a href="mailto:t6chopra@uwaterloo.ca">t6chopra@uwaterloo.ca</a><br>
-Aravind Ravi - <a href="mailto:aravind.ravi@uwaterloo.ca">aravind.ravi@uwaterloo.ca</a></p>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
 </div>
-</body>
 
-</html>
+
+
+<!-- 
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div> -->
