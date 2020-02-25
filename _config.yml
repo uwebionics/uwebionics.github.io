@@ -1,6 +1,9 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+highlighter:      rouge
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 # Permalinks
 permalink:        pretty
@@ -22,3 +25,9 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/uwebionics/uwebionics.github.io
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
