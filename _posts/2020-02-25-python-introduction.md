@@ -5,7 +5,7 @@ permalink: "/python-introduction"
 type: documentation
 ---
 
-# Introduction
+# Python | Introduction
 
 ---
 
@@ -38,6 +38,9 @@ Hello World!
 
 ## Tools & IDEs
 ---
--  You can use anything if you have experience in any. But the recommended tools for the lab are.
-    - **Jupyter Lab (recommended)**, Jupyer Notebook - For signal processing, machine learning, data visualization and plotting.
-    - **Pycharm (recommended, free for UW email id)**, Visual Studio Code, Spyder - Desktop application development.
+-  Recommended tools.
+    - **Jupyter Lab** : For signal-processing, machine learning, data visualization and plotting: 
+    - **Pycharm (professional edition free for UW students)** : For desktop application development
+
+-  Other Options.
+    - Jupyer Notebook, Visual Studio Code, Spyder etc
