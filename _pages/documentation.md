@@ -5,5 +5,4 @@ title: Documentation
 type: documentation
 ---
 
-
-The purpose of this documentation is to make sure each member of the lab has same research and coding practicies so that the overhead and time required to reproduce or extend any scholarly work can be reduced.
+This documentation provides a set of recommendations and guidelines that every member of the lab can follow in their research. These guidelines and coding practices are provided to allow for reproducibility of the scholarly work and flexibility to extend one's research.
