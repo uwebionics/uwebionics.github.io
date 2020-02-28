@@ -4,7 +4,7 @@ layout: page
 ---
 
 
-This website is maintained and operated by the graduate students, phds and research fellows of **EBionics** Lab at **University of Waterloo, Canada**. The lab functions under the instructions and supervision of **Prof. Ning Jiang**. Please visit [Waterloo Engineering Bionics Lab](https://uwaterloo.ca/engineering-bionics-lab) for any further information or lab contacts.
+This website is maintained and operated by the Graduate students (Master and Ph.D.) and Research fellows of **eBionics** Lab at the **University of Waterloo, Canada**. The lab functions under the instructions and supervision of **Prof. Ning Jiang**. Please visit [Waterloo Engineering Bionics Lab](https://uwaterloo.ca/engineering-bionics-lab) for any further information or lab contacts.
 
 <!-- Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
